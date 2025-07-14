@@ -1,70 +1,65 @@
-🧠 Atividade de Lógica de Programação – 30 Questões
-Este repositório contém uma série de 30 exercícios de lógica de programação, com foco em estruturas condicionais e controle de fluxo, utilizando a linguagem Java. Ideal para iniciantes que desejam praticar raciocínio lógico e aprender a estruturar soluções computacionais.
+# 🧠 Atividade de Lógica de Programação – 30 Questões
 
-📘 Descrição
-A atividade consiste em resolver uma série de problemas simples, cada um com um objetivo específico, como verificar se um número é par, se uma idade é suficiente para tirar carteira de motorista, entre outros. Os exercícios envolvem principalmente:
+Este repositório contém uma série de **exercícios de lógica de programação**, focados em **estruturas condicionais** e **controle de fluxo** utilizando a linguagem **Java**. Ideal para iniciantes que desejam praticar a lógica de programação com situações do cotidiano.
 
-Condições (if, else if, else)
+---
 
-Operadores lógicos (&&, ||)
+## 📘 Descrição
 
-Entrada de dados via Scanner
+A proposta da atividade é resolver uma lista de questões práticas que envolvem:
 
-Uso de funções
+- Estruturas condicionais (`if`, `else`, `else if`)
+- Operadores lógicos (`&&`, `||`)
+- Entrada de dados via `Scanner`
+- Funções e validações básicas
 
-📝 Exemplos de Questões
-Trocar os valores de a e b se a for menor que b.
+---
 
-Verificar se um número é positivo ou negativo.
+## 🧪 Exemplos de Questões
 
-Receber 5 notas e informar quantas são superiores a 60.
+1. Trocar os valores de `a` e `b` se `a < b`.
+2. Verificar se um número é positivo ou negativo.
+3. Receber 5 notas (de 0 a 100) e informar quantas são maiores que 60.
+4. Verificar se uma pessoa pode tirar carteira de motorista (idade mínima de 18).
+5. Informar quantos anos faltam para tirar a carteira, caso a idade seja menor que 18.
+6. Verificar se um número é par ou ímpar.
+7. Verificar se um número é par/ímpar e se é positivo/negativo.
+8. Verificar se as variáveis `a` e `b` são pares.
+9. Verificar se `a` **ou** `b` é par.
+10. Função que valida se três ângulos formam um triângulo (soma == 180°).
 
-Verificar se a idade de uma pessoa permite tirar a carteira de motorista.
+---
 
-Informar quantos anos faltam para poder tirar a carteira, caso ainda não tenha a idade mínima.
+## 💻 Exemplo de Código
 
-Informar se um número é par ou ímpar.
+```java
+import java.util.Scanner;
 
-Verificar se um número é par/ímpar e positivo/negativo.
+public class ATV03 {
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
 
-Verificar se ambas as variáveis a e b são pares.
+        System.out.print("Insira a primeira nota: ");
+        int nota01 = read.nextInt();
 
-Verificar se uma ou ambas as variáveis a ou b são pares.
+        System.out.print("Insira a segunda nota: ");
+        int nota02 = read.nextInt();
 
-Função para validar se os ângulos formam um triângulo válido.
+        System.out.print("Insira a terceira nota: ");
+        int nota03 = read.nextInt();
 
-💻 Exemplo de Código
-java
-Copiar
-Editar
-Scanner read = new Scanner(System.in);
+        System.out.print("Insira a quarta nota: ");
+        int nota04 = read.nextInt();
 
-System.out.print("Insira a primeira nota: ");
-int nota01 = read.nextInt();
-// ...
-System.out.print("Insira a quinta nota: ");
-int nota05 = read.nextInt();
+        System.out.print("Insira a quinta nota: ");
+        int nota05 = read.nextInt();
 
-if (nota01 > 60 && nota02 > 60 && nota03 > 60 && nota04 > 60 && nota05 > 60) {
-    System.out.println("Todas as notas são maiores que 60");
-} else {
-    System.out.println("Nem todas as notas são maiores que 60");
+        if (nota01 > 60 && nota02 > 60 && nota03 > 60 && nota04 > 60 && nota05 > 60) {
+            System.out.println("Todas as notas são maiores que 60");
+        } else {
+            System.out.println("Nem todas as notas são maiores que 60");
+        }
+
+        read.close();
+    }
 }
-🚀 Objetivos de Aprendizado
-Praticar o uso de estruturas de decisão.
-
-Desenvolver o raciocínio lógico necessário para resolver problemas computacionais.
-
-Trabalhar com entrada e saída de dados.
-
-Criar pequenos algoritmos que simulam decisões do mundo real.
-
-📚 Requisitos
-Java JDK 8+ instalado
-
-Um editor de código, como VSCode, Eclipse ou IntelliJ
-
-Conhecimentos básicos de programação
-
-✍️ Autor
-Atividade realizada para fins educacionais.
